@@ -1,4 +1,9 @@
 def rentangle(n):
+    """
+    달팽이 알고리즘 할라고. ㅜㅜ
+    :param n:
+    :return:
+    """
     res = [None]*(n**2)
     height = n
     below = 3*n-2
@@ -111,7 +116,7 @@ def mca(s):
             result += same
     # print(result)
     return round(float(len(result)/len(s)),3)
-
+#--------------- test 코드 --------------------
 # print("xxxwbbwww",mca("xxxwbbwww"))
 # print(mca("hhhhhhllllllllllbbbbbbbbnnnnnnnnnnnnnooooooooooooooorrrbbbbbbbbbbbbbbyyyyqqqqqqqqqqqqqqvvvvwwwwwwwwwwbwwwnnnnn"))
 
@@ -128,6 +133,7 @@ print(mca("gkkkkttttttttttttbbbblllllllllllllpppppppppppppppggggggdddiyyyyyygggg
 
 # gk4t9t3b4l9l4p9p6g6d3iy6g9g1d5x9x7f2
 # gk4t9t3b4l9l4p9p6g6d3iy6g9gd5x9x7f2
+# 잘못된것 -> g10 은 g9g1이 아니라 g9g가 되어야 한다 (완료)
 
 
 

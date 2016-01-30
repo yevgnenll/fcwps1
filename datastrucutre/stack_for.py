@@ -2,6 +2,9 @@ class Empty(Exception):
     pass
 
 class custom_stack():
+    """
+    동현이에게 설명하면서 작성한 코드
+    """
     def __init__(self):
         self.data = list() # data
         self.size = 0 # list size
