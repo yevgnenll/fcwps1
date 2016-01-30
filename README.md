@@ -5,6 +5,9 @@
 웹프로그래밍의 전문가가 되기 위한 과정으로 기초적인 컴퓨터의 이론지식부터<br>
 Django의 이해, front-end, back-end 이해와 알고리즘, 자료구조<br>
 
+##규칙
+해야할일, 공부, 숙제등은 issues에 checkbox를 이용해서 작성하여 to-do list를 관리한다
+
 ## 수업내용 
 ####1~5일: 컴퓨터기초
 운영체제, DB, 네트워크 등등 에 관한 개념관련 수업<br>
@@ -36,7 +39,7 @@ Django의 이해, front-end, back-end 이해와 알고리즘, 자료구조<br>
 #####학습목표: 현재까지 배운 내용을 바탕으로 자료구조에 대한 이해
 완벽한 이해를 목표로 했지만 tree와 graph는 추가적인 학습과 예제를 통한 숙련이 필요함.<br>
 이 내용은 현재 박민건강사님 https://github.com/kai3n/fastcampus 저장소<br>
-Seungkwon에 구현되어 있고 datastructure라는 폴더에 있음.<br>
+Seungkwon에 구현하여 수업을 진행하였고, 추가 공부한 내용은 내 저장소 datastructure라는 폴더에 있음.<br>
 배운내용: stack, queue, linked list(singly, doubly) 구현. <br>
 tree, graph -> 개념과 예시코드를 받고 이것으로 다른 알고리즘을 구현함.<br>
 <br>
