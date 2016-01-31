@@ -82,17 +82,26 @@ class MyLinkedList:
         5. size -= 1
         :return:
         """
+        # 리스트가 비어있으면 에러를 발생시킨다
         if self.is_empty():
             raise EmptyLinked
 
+        # cur에 헤드를 대입시키고
         cur = self._head
         before_tail = None
+
         while cur._next:
             before_tail = cur
+            print("cur:",id(cur))
             cur = cur._next
+            if cur._next is None:
+                print("before_tail:",id(before_tail))
         before_tail._next = None
+        print("삭제 후:",id(before_tail))
+
         self._tail = before_tail
         self._size -= 1
+
 
 
     def print_list(self):
@@ -104,7 +113,8 @@ class MyLinkedList:
         while cur._next:
             print(cur._element)
             cur = cur._next
-        print(cur._element, "\nlast")
+        print(cur._element, "<-last")
+        print(cur._next)
 
     def is_empty(self):
         return self._head is None
@@ -119,26 +129,33 @@ class MyLinkedList:
 
 
 lst = MyLinkedList()
-print(lst.is_empty(), True) #True
+# print(lst.is_empty(), True) #True
 lst.add_first(1)  #1
-print("head", lst.head(), 1) #return 1
+# print("head", lst.head(), 1) #return 1
 lst.add_first(2)  #2->1
 lst.add_first(3) #3->2->1
-print("---------")
-lst.print_list()
-print("---------")
+# print("---------")
+# lst.print_list()
+# print("---------")
 
-print("tail",lst.tail(), 1) #return 1
-lst.add_last(4)  #3->2->1->4
-lst.add_last(5)  #3->2->1->4->5
-lst.add_last(6)  #3->2->1->4->5->6
-lst.remove_first()  #2->1->4->5->6
-lst.remove_last()  #2->1->4->5
-print("---------")
+# print("tail",lst.tail(), 1) #return 1
+lst.add_first(4)  #3->2->1->4
+lst.add_first(5)  #3->2->1->4->5
+lst.add_first(6)  #3->2->1->4->5->6
+print("-----삭제 전----")
 lst.print_list() #2->1->4->5
 print("---------")
-print(lst.is_empty()) #False
-print(len(lst))  #return 4
+# lst.remove_first()  #2->1->4->5->6
+lst.remove_last()  #2->1->4->5
+print("----삭제 후-----")
+lst.print_list() #2->1->4->5
+print("---------")
+lst.add_last(10)
+print("----제일 뒤에 10 추가-----")
+lst.print_list() #2->1->4->5
+print("---------")
+# print(lst.is_empty()) #False
+# print(len(lst))  #return 4
 
 
 

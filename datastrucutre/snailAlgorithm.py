@@ -15,6 +15,7 @@ def snail(n):
     :param n:
     :return: 2차원 배열이든 1차원 배열이든 위와같은 값이 나와야 한다.
     """
+
     arr = [[None for a in range(0,n)] for i in range(0, n)]
     status = ["right", "down", "left", "up"] #4가지 경우
     cnt = 0 # 방향이 바뀐 횟수
@@ -94,9 +95,8 @@ def snail(n):
 
 
 # print(snail(5))
-test = snail(6)
+test = snail(5)
 for width in test:
     print(width)
 a = [[None for a in range(0,5)] for i in range(0,5)]
 # print(a)
-
