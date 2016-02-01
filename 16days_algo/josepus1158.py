@@ -23,7 +23,7 @@
 # res += ">"
 # print(res)
 #
-# #<3, 6, 2, 7, 5, 1, 4>
+#<3, 6, 2, 7, 5, 1, 4>
 
 # mems, cnt = map(int, input().split())
 mem = 7

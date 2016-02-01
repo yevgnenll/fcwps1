@@ -7,3 +7,4 @@ for i in range(1, cnt):
     print("*"*(-1*i+cnt), end="")
     print(" "*i*2, end="")
     print("*"*(-1*i+cnt))
+
