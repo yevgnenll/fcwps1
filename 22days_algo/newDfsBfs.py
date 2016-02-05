@@ -1,4 +1,4 @@
-#https://www.acmicpc.net/problem/2331
+#https://www.acmicpc.net/problem/1260
 n, m, start = map(int, input().split())
 # 어디를 방문했는지 체크하는 변수
 check = [False for _ in range(n+1)]
