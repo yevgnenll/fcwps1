@@ -1,0 +1,26 @@
+body{
+	margin: 0;
+}
+.container{
+	/*w1200+mra+mla*/
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.col{
+	width:180px;
+	height: 80px;
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+	/*text-align: center;*/
+	display: flex;
+
+}
+
+.col:nth-child(1) { background: #1677cb; }
+.col:nth-child(2) { background: #2c91e8; }
+.col:nth-child(3) { background: #5aa9ed; }
+.col:nth-child(4) { background: #88c1f2; }
+.col:nth-child(5) { background: #b6d9f7; }
+.col:nth-child(6) { background: #e4f1fc; }

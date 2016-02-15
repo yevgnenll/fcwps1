@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<title>modernizer 라이브러리 활용</title>
+	<script src="js/lib/modernizer.custom.min.js"></script>
+
+</head>
+<body>
+	<!-- div.item-${item-$}*2 -->
+	<div class="item-1">item-1</div>
+	<div class="item-2">item-2</div>
+	<script>
+		var html = document.querySelector('html');
+		// console.log(html);
+		if (html.getAttribute('class').indexOf('flexbox') > -1) {
+			console.log('ok');
+			document.querySelector('.item-1').innerHTML = 'CSS Flexbox 모듈 지원!';
+		}
+	</script>
+</body>
+</html>

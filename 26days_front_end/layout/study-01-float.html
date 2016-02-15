@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- 에밋이 있으면 ! 이거 하나만 놓고 탭키 누르면 됨 -->
+<html lang="ko-KR" class="no-js">
+<!-- lang="ko-KR" 언어-지역 주언어 명시 웹접근성, 검색최적화 때문에 중요함
+인식의 용이성, 운용의 용이성, 견고함: 어느기술에도 사용 가능해야함.
+<html lang="ko-KR" class="no-js"> no-js 접두사 왜 써져있을까?
+javascript가 지원되지 않는다
+-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>javascript 사용 유무 감지</title>
+	<script>
+		var html = document.querySelector('html');
+		console.log(html);
+
+		// var legacy_html = document.documentElement;
+		// console.log('legacy: ', legacy_html);
+		html.setAttribute('class','js');
+
+		// html.className = 'js';
+		//  위에와 같지만 과거에 사용되던 방식, 19번 줄의 방식 사용을 권장함
+		// window.onload.
+		// if(window.localStorage){
+		// 	var old_html_attr = html.getAttribute('class');
+		// 	console.log(old_html_attr);
+		// 	html.setAttribute('class', old_html_attr+' localstorage');
+		// } else{
+		// 	html.setAttribute('class', 'no-localstorage');
+		// }
+
+		function detectFeature(feature){
+			// javascript는 호이스트(hoist) 처리됨
+			// 호이스트란? 영역의 최상단으로 변수, 함수가 끌어올려지는 현상 
+			if (typeof feature !== 'string'){
+				console.error('detectFeature 함수는 인자를 문자열로 받습니다');
+				return;
+			}
+			// typeof 객체를 확인함
+
+			var old_html_attr = html.getAttribute('class');
+			// 변수로 어떤값을 받을 때 사용함
+			if(window[feature]){
+				// 대괄호 안에 변수가 들어오면 처리가 달라짐
+				html.setAttribute('class', old_html_attr+ ' '+ feature);
+			} else {
+				html.setAttribute('class', old_html_attr+ ' no-'+ feature);
+			}
+		}
+
+		detectFeature('localStorage');
+		detectFeature('sessionStorage');
+		detectFeature('touch');
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,27 @@
+.float_left{
+	float:left;
+}
+.float_right{
+	float: right;
+	
+}
+/*.demo .float_left{
+	margin-right: 15px;
+}
+.demo .float_right{
+	margin-left: 15px;
+}*/
+/*.demo:nth-child(odd) img{
+	float: right;
+}*/
+/*css 재사용 모듈*/
+
+.demo img{
+	float: left;
+	margin-right: 15px;
+}
+
+.demo .float_right{
+	float: right;
+}
+

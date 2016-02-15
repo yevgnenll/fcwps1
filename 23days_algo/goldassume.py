@@ -45,7 +45,7 @@ while True:
 
         if check[n-prime] == False:
             print("%d = %d + %d"%(n, prime, n-prime))
-            print(check[n-prime], check[prime], prime, n, n-prime)
-            break
+            # print(check[n-prime], check[prime], prime, n, n-prime)
+
 
             # break
