@@ -50,3 +50,10 @@ tree, graph -> 개념과 예시코드를 받고 이것으로 다른 알고리즘
 github readme는 markdown을 이용하여 작성해야 함.<br>
 참고: https://help.github.com/articles/working-with-advanced-formatting/<br>
 잊어먹으면 이거 보고 다시 쓸것~
+
+####26~35일: front-end 과정
+css3, html5, javascript, jquery, sass, gulp, susy, gulp 등 학습<br>
+브라우저 확인, 서버 전송을 원활하게 하고, 좀 더 상세하게 다루기 위해서<br>
+front-end 깃험 저장소를 별도로 만듬<br>
+[들어가기](https://github.com/yevgnenll/front)<br>
+프론트엔드를 배우는 2월 15일~26일간의 자료는 위 저장소에서 관리함
