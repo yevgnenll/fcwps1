@@ -48,7 +48,7 @@ tree, graph -> 개념과 예시코드를 받고 이것으로 다른 알고리즘
 -> 내용이 추가되면 그때그때 추가하겠음<br>
 <br>
 github readme는 markdown을 이용하여 작성해야 함.<br>
-참고: https://help.github.com/articles/working-with-advanced-formatting/<br>
+참고: https://help.github.com/articles/basic-writing-and-formatting-syntax/<br>
 잊어먹으면 이거 보고 다시 쓸것~
 
 ####26~35일: front-end 과정
